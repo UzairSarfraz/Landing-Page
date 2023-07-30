@@ -32,6 +32,48 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+/* Hide default scrollbar for webkit-based browsers */
+.big-wrapper.light ::-webkit-scrollbar {
+  display: none;
+}
+
+.big-wrapper.dark ::-webkit-scrollbar {
+  display: none;
+}
+/* Custom track for scrollbar */
+.big-wrapper.light ::-webkit-scrollbar-track {
+  background-color: var(--backgroundColor);
+  border-radius: 8px;
+}
+
+.big-wrapper.dark ::-webkit-scrollbar-track {
+  background-color: var(--darkTwo);
+  border-radius: 8px;
+}
+/* Custom thumb for scrollbar */
+.big-wrapper.light ::-webkit-scrollbar-thumb {
+  background-color: var(--mainColor);
+  border-radius: 8px;
+}
+
+.big-wrapper.dark ::-webkit-scrollbar-thumb {
+  background-color: var(--darkOne);
+  border-radius: 8px;
+}
+
+.big-wrapper.light ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hoverColor);
+}
+
+.big-wrapper.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hoverColor);
+}
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Styling the scrollbar for webkit-based browsers */
 .big-wrapper.light ::-webkit-scrollbar {
   width: 12px;
